@@ -61,7 +61,7 @@ users ["Erik"][:home_town]
 # 3. Get the array of Erik's lottery numbers
 users ["Erik"][:lottery_numbers]
 # 4. Get the type of Avril's pet Monty
-p users ["Avril"][:pets]
+users ["Avril"][:pets][0][:species]
 # 5. Get the smallest of Erik's lottery numbers
 num = users ["Erik"][:lottery_numbers]
 num.to_a.min
@@ -83,5 +83,3 @@ users ["Erik"][:home_town] = "Edinburgh"
  )
 
 # 10. Add another person to the users hash
-users.push("Filip" ==> {})
-p users
